@@ -5,6 +5,7 @@ import warning from './templates/warning.html';
 import './styles/warning.css';
 import fraseTxt from './files/frase.txt';
 import descricao from './files/descricao.json'
+import Header from './components/header.js';
 
 const title = new Title();
 
@@ -33,3 +34,11 @@ console.log(frase);
 const pessoa = descricao;
 console.log(pessoa);
 
+// import Header
+const header = new Header();
+header.create("Header Teste");
+
+// Define Plugin
+console.log(VERSION);
+console.log(PORT);
+console.log(process.env.API_KEY);
