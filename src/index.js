@@ -6,6 +6,7 @@ import './styles/warning.css';
 import fraseTxt from './files/frase.txt';
 import descricao from './files/descricao.json'
 import Header from './components/header.js';
+import sum from './calc.js';
 
 const title = new Title();
 
@@ -42,3 +43,10 @@ header.create("Header Teste");
 console.log(VERSION);
 console.log(PORT);
 console.log(process.env.API_KEY);
+
+// Modes
+console.log("teste de build");
+const x = sum(1,2);
+const y = sum(3,4);
+const z = sum(5,6);
+console.log(x,y, z);
